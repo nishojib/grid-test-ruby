@@ -1,0 +1,7 @@
+.picture-group
+  - for r in response['images'] do
+    .picture-box
+      = image_tag(r['url'], alt: "", :class => "picture")
+      .info
+        h1 Info
+        p Description
